@@ -171,11 +171,11 @@ return [
         /*
          * Application Service Providers...
          */
-        cbrcleaning\Providers\AppServiceProvider::class,
-        cbrcleaning\Providers\AuthServiceProvider::class,
-        // cbrcleaning\Providers\BroadcastServiceProvider::class,
-        cbrcleaning\Providers\EventServiceProvider::class,
-        cbrcleaning\Providers\RouteServiceProvider::class,
+        App\Providers\AppServiceProvider::class,
+        App\Providers\AuthServiceProvider::class,
+        // App\Providers\BroadcastServiceProvider::class,
+        App\Providers\EventServiceProvider::class,
+        App\Providers\RouteServiceProvider::class,
 
     ],
 
