@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Providers;
+namespace cbrcleaning\Providers;
 
 use Illuminate\Support\ServiceProvider;
 
