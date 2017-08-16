@@ -189,6 +189,8 @@ return [
         SammyK\LaravelFacebookSdk\LaravelFacebookSdkServiceProvider::class,
         Thujohn\Twitter\TwitterServiceProvider::class,
         Alaouy\Youtube\YoutubeServiceProvider::class,
+        EllisTheDev\Robots\RobotsServiceProvider::class,
+        Cornford\Googlmapper\MapperServiceProvider::class,
 
     ],
 
@@ -244,7 +246,7 @@ return [
         // other Facades ommited
         'SEOMeta'   => Artesaos\SEOTools\Facades\SEOMeta::class,
         'OpenGraph' => Artesaos\SEOTools\Facades\OpenGraph::class,
-        'Twitter'   => Artesaos\SEOTools\Facades\TwitterCard::class,
+        'TwitterSEO'   => Artesaos\SEOTools\Facades\TwitterCard::class,
         // or
         'SEO' => Artesaos\SEOTools\Facades\SEOTools::class,
         'SMS' => SimpleSoftwareIO\SMS\Facades\SMS::class,
@@ -255,6 +257,8 @@ return [
         'Facebook' => SammyK\LaravelFacebookSdk\FacebookFacade::class,
         'Twitter' => Thujohn\Twitter\Facades\Twitter::class,
         'Youtube' => Alaouy\Youtube\Facades\Youtube::class,
+        'Robots' => EllisTheDev\Robots\RobotsFacade::class,
+        'Mapper' => Cornford\Googlmapper\Facades\MapperFacade::class,
 
 
     ],

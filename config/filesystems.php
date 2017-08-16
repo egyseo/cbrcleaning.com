@@ -42,7 +42,11 @@ return [
     */
 
     'disks' => [
-
+        'media-slideshow' => [
+            'driver' => 'local',
+            'root' => storage_path('/img/slideshow'),
+        ],
+        
         'local' => [
             'driver' => 'local',
             'root' => storage_path('app'),

@@ -1,15 +1,16 @@
  <div class="container">
     <div class="row">
-        <div class="col-sm-6">
-            <p class="pull-right">CopyRight &copy; {{ date('Y') }} CBR Cleaning <br>
-                Powered by <a href="www.nissienterprise.com?utm_source=referalcbrcleaning" target="_parent" title="Nissi Technology Enterprise">Nissi Technology Enterprise</a></p>
+        <div class="col-sm-6 col-xs-12">
+            <p class="pull-left">CopyRight &copy; {{ date('Y') }} {{ $configuration->company_shortname }}<br>
+                Powered by <a href="http://www.nissienterprise.com?utm_source=referalcbrcleaning" target="_parent" title="Nissi Technology Enterprise">Nissi Technology Enterprises Inc.</a></p>
         </div>
-        <div class="col-sm-6">
+        <div class="col-sm-6 col-xs-12">
             <ul class="pull-right">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Faq</a></li>
-                li><a href="#">Contact Us</a></li>
+                <li><a href="{{ url('/component/sitemap') }}">Sitemp</a></li>
+                <li><a href="{{ url('/component/privacypolicy') }}">Privacy Policy</a></li>
+                <li><a href="{{ url('/component/terms') }}">Terms &amp; Conditions</a></li>
+                <li><a href="{{ url('/about/faq') }}">FAQ</a></li>
+                <li><a href="{{ url('/about/contact') }}">Contact Us</a></li>
             </ul>
         </div>
     </div>

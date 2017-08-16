@@ -15,15 +15,17 @@ class CreateSubmissionsTable extends Migration
     {
         Schema::create('submissions', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('name');
             $table->string('email');
+            $table->string('message');
             $table->string('phone');
-            $table->string('address');
             $table->string('country');
-            $table->string('browser');
-            $table->string('agent');
-            $table->string('os');
-            $table->timestamps('createddate');
+            $table->string('ip');     
+            $table->string('city');   
+            $table->string('state');            
+            $table->string('lat');  
+            $table->string('lon');    
+            $table->string('postal_code');     
+            $table->timestamps();
         });
     }
 

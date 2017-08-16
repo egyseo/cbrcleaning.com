@@ -30,7 +30,7 @@ class LoginController extends Controller
      */
     public function showLoginForm()
     {
-        return view('adminlte::auth.login');
+        return view('backend.auth.login');
     }
 
     /**
@@ -38,7 +38,7 @@ class LoginController extends Controller
      *
      * @var string
      */
-    protected $redirectTo = '/home';
+    protected $redirectTo = '/administrator/dashboard';
 
     /**
      * Create a new controller instance.
@@ -68,7 +68,9 @@ class LoginController extends Controller
      */
     protected function attemptLogin(Request $request)
     {
-        if ($this->username() === 'email') return $this->attemptLoginAtAuthenticatesUsers($request);
+        if ($this->username() === 'email')  {
+            return $this->attemptLoginAtAuthenticatesUsers($request);
+        }
         if ( ! $this->attemptLoginAtAuthenticatesUsers($request)) {
             return $this->attempLoginUsingUsernameAsAnEmail($request);
         }

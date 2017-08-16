@@ -6,12 +6,12 @@ return [
          * The api key of a MailChimp account. You can find yours here:
          * https://us10.admin.mailchimp.com/account/api-key-popup/
          */
-        'apiKey' => env('fa63830d23b0c793de63a565f85c4753-us13'),
+        'apiKey' => env('MAILCHIMP_APIKEY'),
 
         /*
          * When not specifying a listname in the various methods, use the list with this name
          */
-        'defaultListName' => 'BDD Nissi',
+        'defaultListName' => env('MAILCHIMP_LIST_NAME'),
 
         /*
          * Here you can define properties of the lists you want to

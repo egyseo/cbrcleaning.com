@@ -10,17 +10,20 @@
         "alaouy/youtube": "dev-master",
         "albertcht/invisible-recaptcha": "^1.4",
         "artesaos/seotools": "^0.10.0",
+        "ellisthedev/laravel-5-robots": "~0.1.0",
         "laravel/framework": "5.4.*",
         "laravel/tinker": "~1.0",
         "laravelcollective/html": "^5.3.",
+        "nesbot/carbon": "^1.22",
         "ramsey/laravel-oauth2-instagram": "^2.0",
         "sammyk/laravel-facebook-sdk": "^3.0",
         "simplesoftwareio/simple-sms": "3.0.*",
         "spatie/laravel-analytics": "^3.0",
-        "spatie/laravel-newsletter": "^3.5",
+        "spatie/laravel-newsletter": "^3.6",
         "spatie/laravel-sitemap": "^2.2",
         "thujohn/twitter": "^2.2",
-        "torann/geoip": "^1.0"
+        "torann/geoip": "^1.0",
+        "cornford/googlmapper": "2.*"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",
